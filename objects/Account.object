@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Test__c</fullName>
+        <label>Test</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>4567</fullName>
+                    <default>false</default>
+                    <label>4567</label>
+                </value>
+                <value>
+                    <fullName>09876</fullName>
+                    <default>false</default>
+                    <label>09876</label>
+                </value>
+                <value>
+                    <fullName>9876</fullName>
+                    <default>false</default>
+                    <label>9876</label>
+                </value>
+                <value>
+                    <fullName>76543</fullName>
+                    <default>false</default>
+                    <label>76543</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
