@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Number of Reviews</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Number of Reviews</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Unique</aggregateTypes>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>copadoQuality__Functional_Review__c.copadoQuality__Planned_Date__c</field>
+    </columns>
+    <columns>
+        <field>copadoQuality__Functional_Review__c.copadoQuality__Feature__c</field>
+    </columns>
+    <columns>
+        <field>copadoQuality__Functional_Review__c.copadoQuality__Epic__c</field>
+    </columns>
+    <columns>
+        <field>copadoQuality__Functional_Review__c.copadoQuality__Review_Target_URL__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <description>Non summarized List of Functional Reviews in the current FY</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copadoQuality__Functional_Review__c.copadoQuality__Extension_Configuration__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Functional Reviews Current FY</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copadoQuality__Functional_Review__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

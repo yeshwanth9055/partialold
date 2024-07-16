@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- ConnectionDetailFieldSet --></label>
+        <name>copadoconnect__ConnectionDetailFieldSet</name>
+    </fieldSets>
+    <fields>
+        <help><!-- The status of the named credential connection. Draft = Created and Saved, Connected = You have successfully authorized and connected to a Third Party application, Failed = Failed connection due to configuration or authorization issues. --></help>
+        <label><!-- Connection Status --></label>
+        <name>copadoconnect__Connection_Status__c</name>
+        <picklistValues>
+            <masterLabel>Connected</masterLabel>
+            <translation><!-- Connected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copadoconnect__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Project ID --></label>
+        <name>copadoconnect__External_Project_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Project Key --></label>
+        <name>copadoconnect__External_Project_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- This represents the status of the integration and the syncing of records. --></help>
+        <label><!-- Integration Status --></label>
+        <name>copadoconnect__Integration_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Active with Errors</masterLabel>
+            <translation><!-- Active with Errors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Named Credential --></label>
+        <name>copadoconnect__Named_Credential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>copadoconnect__Organization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>copadoconnect__Project__c</name>
+        <relationshipLabel><!-- Copado Integrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>copadoconnect__Provider__c</name>
+        <picklistValues>
+            <masterLabel>JIRA</masterLabel>
+            <translation><!-- JIRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ServiceNow</masterLabel>
+            <translation><!-- ServiceNow --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

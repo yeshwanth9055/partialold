@@ -1,0 +1,36 @@
+<template>
+    <lightning-card class="issue">
+        <details>
+            <summary>
+                <div class="detail-header">
+                    <lightning-icon icon-name="utility:switch" size="x-small"></lightning-icon>
+                    <lightning-badge label={item.level} class={labelStyle}></lightning-badge>
+                    &nbsp;
+                    <h3>
+                        {item.ruleId}
+                        <template if:true={item.rule.helpUri}>
+                            <a href={item.rule.helpUri} target="_blank">
+                                <lightning-icon icon-name="standard:link" alternative-text="Link to Rule"
+                                    title="Link to Rule" size="x-small"></lightning-icon>
+                            </a>
+                        </template>
+                    </h3>
+                    <a role="button" variant="base" class="slds-m-left_x-small">
+                        Details
+                    </a>
+                </div>
+                <pre>
+                    {item.message}
+                </pre>
+            </summary>
+            <blockquote class="slds-border_left">
+                {item.raw}
+            </blockquote>
+        </details>
+        <template if:true={item.location}>
+            <p class="location">
+            @ {item.location}
+            </p>
+        </template>
+</lightning-card>
+</template>

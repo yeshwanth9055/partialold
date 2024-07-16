@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Objects Mappings --></label>
+        <name>copadoconnect__Objects_Mappings</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Copado Integration --></label>
+        <name>copadoconnect__Copado_Integration__c</name>
+        <relationshipLabel><!-- Object Mappings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider Object --></label>
+        <name>copadoconnect__External_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Type --></label>
+        <name>copadoconnect__External_Object_Record_Type_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Type --></label>
+        <name>copadoconnect__External_Object_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Named Credential --></label>
+        <name>copadoconnect__Named_Credential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider --></label>
+        <name>copadoconnect__Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Object --></label>
+        <name>copadoconnect__Salesforce_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copado Record Type --></label>
+        <name>copadoconnect__Salesforce_Object_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>copadoconnect__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mapped</masterLabel>
+            <translation><!-- Mapped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Synced? --></label>
+        <name>copadoconnect__Synced__c</name>
+    </fields>
+</CustomObjectTranslation>

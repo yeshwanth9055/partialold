@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Monitored_Environments__c$Name</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Total Monitored Environments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Monitored_Environments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Monitored_Environments__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,16 @@
+<template>
+    <template if:true={generalMessage}>
+        <p><lightning-formatted-rich-text value={generalMessage}></lightning-formatted-rich-text></p>
+    </template>
+    <template for:each={scans} for:item="scan">
+        <div key={scan.tool}>
+            <b>Scanning tool: {scan.tool}</b>
+
+            <p><lightning-formatted-text value={scan.summary}></lightning-formatted-text><br/></p>
+
+            <template for:each={scan.items} for:item="item">
+                <c-test-result-viewer-entry item={item} key={item.uid}></c-test-result-viewer-entry>
+            </template>
+        </div>
+    </template>
+</template>

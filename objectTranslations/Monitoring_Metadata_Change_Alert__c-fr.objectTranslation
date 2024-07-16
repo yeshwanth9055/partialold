@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Metadata Change Alert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Metadata Change Alerts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Acting Username --></label>
+        <name>Acting_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Category --></label>
+        <name>Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Metadata Change Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delegate User --></label>
+        <name>Delegate_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acting User --></label>
+        <name>Display_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <relationshipLabel><!-- Metadata Change Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Date --></label>
+        <name>Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Environment Name --></label>
+        <name>Full_Environment_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline --></label>
+        <name>Pipeline__c</name>
+        <relationshipLabel><!-- Metadata Change Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Section --></label>
+        <name>Section__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unassigned</masterLabel>
+            <translation><!-- Unassigned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Acting Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

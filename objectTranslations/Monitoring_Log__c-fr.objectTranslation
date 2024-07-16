@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Monitoring Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Monitoring Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <relationshipLabel><!-- Monitoring Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function Result --></label>
+        <name>Function_Result__c</name>
+        <relationshipLabel><!-- Monitoring Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Integration User --></label>
+        <name>Integration_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitored Environment --></label>
+        <name>Monitored_Environment__c</name>
+        <relationshipLabel><!-- Monitoring Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pipeline --></label>
+        <name>Pipeline__c</name>
+        <relationshipLabel><!-- Monitoring Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

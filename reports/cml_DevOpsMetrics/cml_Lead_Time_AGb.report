@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CDF1:AVG*24</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Convert to Hours</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Lead Time Hours</masterLabel>
+        <scale>5</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>CDF1:AVG*24*60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Convert to Minutes</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Lead Time Minutes</masterLabel>
+        <scale>5</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c-copado__User_Story__c.cml_First_Ready_to_Promote_Time__c</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Number of Days it takes to get a User Story through the Pipeline</description>
+        <developerName>CDF1</developerName>
+        <label>Lead Time Days</label>
+        <scale>5</scale>
+    </customDetailFormulas>
+    <description>Average Lead Time by Month</description>
+    <filter>
+        <criteriaItems>
+            <column>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$copado__Promotion__c.cml_Is_Destination_a_Production_Org__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.copado__Project__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Lead Time</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$copado__User_Story__c$copado__Promoted_User_Story__c@copado__Promoted_User_Story__c.copado__Promotion__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>CDF1</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

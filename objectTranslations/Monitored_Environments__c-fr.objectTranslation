@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Monitored Environment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Monitored Environments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <relationshipLabel><!-- Monitored Environments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Monitoring Log --></label>
+        <name>Last_Monitoring_Log__c</name>
+        <relationshipLabel><!-- Monitored Environments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Scan Status --></label>
+        <name>Last_Scan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Scanned Yet</masterLabel>
+            <translation><!-- Not Scanned Yet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Successful Scan --></label>
+        <name>Last_Successful_Scan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline --></label>
+        <name>Pipeline__c</name>
+        <relationshipLabel><!-- Monitored Environments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Schedule --></label>
+        <name>Schedule__c</name>
+        <picklistValues>
+            <masterLabel>Unscheduled</masterLabel>
+            <translation><!-- Unscheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Apex Job Schedule</masterLabel>
+            <translation><!-- Use Apex Job Schedule --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please run a successful Manual Scan before adding to the monitoring schedule. --></errorMessage>
+        <name>Ensure_a_Successful_Manual_Run</name>
+    </validationRules>
+</CustomObjectTranslation>

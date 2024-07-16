@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CDF1:AVG*24</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Convert to Hours</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Time to Recover Hours</masterLabel>
+        <scale>5</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>CDF1:AVG*24*60</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Convert to Minutes</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Time To Recover Minutes</masterLabel>
+        <scale>5</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>copado__User_Story__c.cml_Is_Business_Disruption_Failure__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c - CUST_CREATED_DATE</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Number of Days it took to get this fix live in Production Environment</description>
+        <developerName>CDF1</developerName>
+        <label>Time To Recover (Days)</label>
+        <scale>5</scale>
+    </customDetailFormulas>
+    <description>The average time it takes to resolve business disruption failures</description>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>copado__User_Story__c.copado__Bug</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.cml_Severity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>P0 - Blocker - Business Disruption,P1 - Critical - No Workaround</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c.copado__Project__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Mean Time to Restore</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.cml_First_Time_Promoted_Prod_or_RB__c</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

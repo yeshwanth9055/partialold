@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <acrossGroupingContext>CUST_RECORDTYPE</acrossGroupingContext>
+        <calculatedFormula>RowCount/FK_CUSTENT_ID:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Average Number of Findings per Record Type</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>ROW_GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Number of Findings Per RT</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>COLUMN_GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>RowCount / FK_NAME:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>ROW_GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Number Of Finidings per Review</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_RECORDTYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Average Number of Findings per Review</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$copado__User_Story__c@copado__User_Story__c.copadoQuality__Functional_Review__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c.copado__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

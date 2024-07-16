@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Copado Integration --></label>
+        <name>copadoconnect__Copado_Integration__c</name>
+        <relationshipLabel><!-- Integration Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>copadoconnect__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Code --></label>
+        <name>copadoconnect__Error_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>copadoconnect__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>copadoconnect__External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>copadoconnect__Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Id --></label>
+        <name>copadoconnect__Parent_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result Data --></label>
+        <name>copadoconnect__Result_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sync Direction --></label>
+        <name>copadoconnect__Sync_Direction__c</name>
+        <picklistValues>
+            <masterLabel>Copado &gt; Provider</masterLabel>
+            <translation><!-- Copado &gt; Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider &gt; Copado</masterLabel>
+            <translation><!-- Provider &gt; Copado --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>
