@@ -201,5 +201,5 @@
             <targetReference>Welcome_Screen</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
 </Flow>
