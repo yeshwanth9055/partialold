@@ -21327,6 +21327,10 @@
         <layout>CommunityMemberLayout-Community Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Contact-A31</layout>
+        <recordType>Contact.A3</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Contact-Formato de contactos</layout>
     </layoutAssignments>
     <layoutAssignments>

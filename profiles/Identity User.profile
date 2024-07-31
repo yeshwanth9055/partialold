@@ -21462,6 +21462,10 @@
         <layout>Contact-Formato de contactos</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Contact-Formato de contactos</layout>
+        <recordType>Contact.A3</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>ContactPointAddress-Formato Dirección de punto de contacto</layout>
     </layoutAssignments>
     <layoutAssignments>
