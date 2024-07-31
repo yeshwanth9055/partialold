@@ -195,14 +195,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Needs_a_second_visit__c</fullName>
-        <defaultValue>false</defaultValue>
-        <label>Needs a second visit?</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Notes__c</fullName>
         <label>Notes</label>
         <required>false</required>
