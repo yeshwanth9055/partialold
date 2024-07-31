@@ -13822,6 +13822,36 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Repair_Details__c.Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Repair_Details__c.Issue__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Repair_Details__c.Needs_a_second_visit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Repair_Details__c.Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Repair_Details__c.Repair_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Repair_Details__c.Repair_Technician__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Seller.ActiveFromDate</field>
         <readable>false</readable>
@@ -21416,6 +21446,14 @@
         <field>copadovsm__Value_Stream_Map__c.copadovsm__Version__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>Welcome_Deployment</flow>
+    </flowAccesses>
+    <layoutAssignments>
+        <layout>Contact-A31</layout>
+        <recordType>Contact.A3</recordType>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-A31</layout>
         <recordType>Contact.A3</recordType>
@@ -21434,6 +21472,12 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>ProcessException-Formato Excepción de proceso</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Repair_Details__c-Repair Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Repair_Technician__c-Repair Technician Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserAlt-User Profile Layout</layout>
