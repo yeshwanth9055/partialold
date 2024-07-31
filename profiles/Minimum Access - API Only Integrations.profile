@@ -21339,6 +21339,16 @@
         <recordType>Contact.A3</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Contact-A31</layout>
+        <recordType>Contact.A3</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Repair_Details__c-Repair Details Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Repair_Technician__c-Repair Technician Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>WorkPlan-Work Plan Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
