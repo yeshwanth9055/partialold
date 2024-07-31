@@ -21335,6 +21335,10 @@
         <layout>Repair_Technician__c-Repair Technician Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Contact-A31</layout>
+        <recordType>Contact.A3</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>WorkPlan-Work Plan Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
